@@ -11,3 +11,17 @@ public class Main {
         cat.sayHello();
     }
 }
+
+class Person {
+    String name;
+
+    // Constructor with parameter
+    Person(String name) {
+        this.name = name; // 'this' differentiates the instance variable from the parameter
+    }
+
+    void displayInfo() {
+        System.out.println("Name: " + this.name); // 'this' refers to the current object's name
+    }
+}
+
